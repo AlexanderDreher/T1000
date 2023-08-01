@@ -1,38 +1,30 @@
 % Präambel
 \documentclass[
-fontsize=12pt,					% Schriftgröße
-paper=a4,						% Papierformat
-twoside=false, 					% einseitiges (oneside) oder zweiseitiges (twoside) Dokument
-listof=totoc, 					% Tabellen- und Abbildungsverzeichnis ins Inhaltsverzeichnis
-bibliography=totoc,				% Literaturverzeichnis ins Inhaltsverzeichnis aufnehmen
-titlepage, 						% Titlepage-Umgebung statt \maketitle
+fontsize=12pt,
+paper=a4,						
+twoside=false, 					
+listof=totoc, 					
+bibliography=totoc,				
+titlepage, 					
 %headsepline, 					% horizontale Linie unter Kolumnentitel
 %abstracton,					% Überschrift beim Abstract einschalten, Abstract muss dazu in {abstract}-Umgebung stehen
-DIV=12,							% Satzspiegeleinstellung, 12 ist Standar bei KOMA
+DIV=12,						
 %BCOR=6mm,						% Bindekorrektur, die den Seitenspiegel um 6mm nach rechts verschiebt,
-cleardoublepage=empty,			% Stil einer leeren eingefügten Seite bei Kapitelwechsel
-parskip,							% Absatzabstand bei Absatzwechsel einfügen
+cleardoublepage=empty,			
+parskip,				
 ngerman
 ]{scrbook}
 \usepackage{times}		
 \usepackage[setspace=false]{scrhack}
-\usepackage[utf8]{inputenc} 	% ermöglicht die direkte Eingabe von Umlauten
-\usepackage[T1]{fontenc} 		% Ausgabe aller zeichen in einer T1-Codierung (wichtig für die Ausgabe von Umlauten!)
-\usepackage{babel} 				% deutsche Trennungsregeln und Übersetzung der festcodierten Überschriften
-\setlength{\parindent}{0ex} 	% bei neuem Abschnitt nicht einrücken
-%------
-% Folgende Einstellungen entsprechen den Vorgaben der Leitlinien
+\usepackage[utf8]{inputenc} 	
+\usepackage[T1]{fontenc} 		
+\usepackage{babel} 			
+\setlength{\parindent}{0ex} 	
 \usepackage[onehalfspacing]{setspace}
-% Ende Leitlinien
-%------
-%------
-% Folgende Einstellungen sind bei größeren Arbeiten mit viel Text zu empfehlen.
-% Hierbei oben DIV=16 einstellen und Zeile \usepackage[onehalfspacing]{setspace} auskommentieren.
-%\linespread{1.2}\selectfont     % Zeilenabstand erhöhen - größere Werte als 1.2 nicht verwenden!!
-% Ende Einstellung große Arbeiten mit viel Text.
+
 %------
 
-\usepackage{siunitx}			% Vereinfachte Eingabe von Einheiten in Formeln
+\usepackage{siunitx}			
 \sisetup{
 	number-unit-product = \;,
 	inter-unit-product = \:,
@@ -40,8 +32,8 @@ ngerman
 	output-decimal-marker = {,}
 }
 
-\usepackage{graphicx}  			% Einbinden von Grafiken erlauben
-\usepackage[format=hang,		% Formatierungen von Unter- / Überschriften
+\usepackage{graphicx}  			
+\usepackage[format=hang,		
 font=normal,
 labelfont=bf,
 justification=RaggedRight,
@@ -49,10 +41,10 @@ singlelinecheck=true,
 aboveskip=1mm
 ]{caption}
 
-\usepackage[backend=biber, 		%% Hilfsprogramm "biber" beim Compilieren nutzen (statt "biblatex" oder "bibtex")
-style=alphabetic, 				%% Zitierstil (siehe Dokumentation)
-natbib=true, 					%% Bereitstellen von natbib-kompatiblen Zitierkommandos
-hyperref=true, 					%% hyperref-Paket verwenden, um Links zu erstellen
+\usepackage[backend=biber, 		
+style=alphabetic, 				
+natbib=true, 					
+hyperref=true, 					
 ]{biblatex}
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
@@ -69,15 +61,15 @@ hyperref=true, 					%% hyperref-Paket verwenden, um Links zu erstellen
 
 \usepackage{pdfpages}
 
-\usepackage{enumitem}			% Erlaubt Änderung der Nummerierung in der Umgebung enumerate
+\usepackage{enumitem}			
 
-\usepackage{amsmath}			% Ergänzungen für Formeln
-\usepackage{textcomp} 			% zum Einsatz von Eurozeichen u. a. Symbolen
-\usepackage{eurosym}			% bessere Darstellung Euro-Symbol mit \euro
+\usepackage{amsmath}			
+\usepackage{textcomp} 			
+\usepackage{eurosym}			% Bessere Darstellung Euro-Symbol mit \euro
 
-\usepackage[					% Einstellunge Paket hyperref
-hyperfootnotes=false,			% im pfd-Output Fußnoten nicht verlinken
-hidelinks						% Entfernen von farbigen Umrandungen der Links
+\usepackage[					
+hyperfootnotes=false,			
+hidelinks						
 ]{hyperref}
 
 \usepackage{makeidx}			% Paket zur Erstellung eines Index
