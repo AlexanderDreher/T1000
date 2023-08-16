@@ -1,0 +1,115 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{Tipler.2019}{book}{}
+      \name{editor}{4}{}{%
+        {{hash=ff86ef6fbcd6436b08e4b48a7f82dac4}{%
+           family={Tipler},
+           familyi={T\bibinitperiod},
+           given={Paul\bibnamedelima Allen},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=028521cb21b446864a6a4f23dbe0e505}{%
+           family={Mosca},
+           familyi={M\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6cc4e7b4a2eb156c43fb992b31bd417f}{%
+           family={Kersten},
+           familyi={K\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=84a4f17e49c58e2bb6d4fc131112a250}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{e4c3840c738a2e37921fe0f800466b46}
+      \strng{fullhash}{ae29294409c4e4fe8c37c02af1584b66}
+      \strng{bibnamehash}{e4c3840c738a2e37921fe0f800466b46}
+      \strng{editorbibnamehash}{e4c3840c738a2e37921fe0f800466b46}
+      \strng{editornamehash}{e4c3840c738a2e37921fe0f800466b46}
+      \strng{editorfullhash}{ae29294409c4e4fe8c37c02af1584b66}
+      \field{labelalpha}{Tip+19}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{8., korrigierte und erweiterte Auflage}
+      \field{isbn}{9783662582800}
+      \field{series}{Lehrbuch}
+      \field{title}{Physik: Für Studierende der Naturwissenschaften und Technik}
+      \field{year}{2019}
+      \verb{file}
+      \verb https://d-nb.info/1172616485/04
+      \endverb
+      \keyw{Atomphysik;Elektrodynamik;Experimentalphysik;Mechanik;Moderne Physik;Optik;Physik;Physik für Nebenfächer;Physik für Wissenschaftler und Ingenieure;Physikaufgaben;Quantenmechanik;Thermodynamik;Tipler Lehrbuch;Übungsaufgaben Physik}
+    \endentry
+    \entry{Ziegler.2017}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8142c299c2a225ac7864c9f6c2aa5921}{%
+           family={Ziegler},
+           familyi={Z\bibinitperiod},
+           given={Julius},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {KIT Scientific Publishing}%
+        {Karlsruher Institut für Technologie}%
+      }
+      \list{location}{1}{%
+        {Karlsruhe}%
+      }
+      \strng{namehash}{8142c299c2a225ac7864c9f6c2aa5921}
+      \strng{fullhash}{8142c299c2a225ac7864c9f6c2aa5921}
+      \strng{bibnamehash}{8142c299c2a225ac7864c9f6c2aa5921}
+      \strng{authorbibnamehash}{8142c299c2a225ac7864c9f6c2aa5921}
+      \strng{authornamehash}{8142c299c2a225ac7864c9f6c2aa5921}
+      \strng{authorfullhash}{8142c299c2a225ac7864c9f6c2aa5921}
+      \field{labelalpha}{Zie17}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optimale Trajektorienplanung für Automobile}
+      \field{type}{Dissertation}
+      \field{year}{2017}
+      \verb{file}
+      \verb https://nbn-resolving.org/urn:nbn:de:0072-565300
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.5445/KSP/1000056530
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.5445/KSP/1000056530
+      \endverb
+      \keyw{advanced driver assistance systems;Arbeitsraum;Autonomes Fahren;autonomous driving;Einrad;Fahrerassistenzsysteme;Fahrstreifen;Fahrzeug;Fahrzeugregelung;Kraftwagen;robotics;Robotik;trajectory planning;Trajektorienplanung;vehicle control;Verkehrsraum}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
