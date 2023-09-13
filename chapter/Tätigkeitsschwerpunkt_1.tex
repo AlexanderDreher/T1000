@@ -101,7 +101,8 @@ Verschaltung nur zu einer Reduktion des Stroms führt. Um den gesamten Strom üb
 I_{ges} = \frac{U}{R_{ges}}
 \label{eqn:Gesamtstrom Parallelschaltung}
 \end{equation}
-Bei einer Reihenschaltung von Widerständen ist die Berechnung deutlich einfacher, da sich diese lediglich addieren. Somit können beliebig viele Widerstände in Reihe geschaltet werden, um den gesamten Widerstand zu erhöhen.
+Bei einer Reihenschaltung von Widerständen ist die Berechnung deutlich einfacher, da sich diese lediglich addieren. Somit können beliebig viele Widerstände 
+in Reihe geschaltet werden, um den gesamten Widerstand zu erhöhen.
 \begin{equation}
 R_{ges}=R_1+R_2+…
 \label{eqn:Widerstand Reihenschaltung}
@@ -145,10 +146,59 @@ Ein weiterer Versuch kann durchgeführt werden, indem man zwei Glühbirnen beim 
 parallelschaltet. Man wird beobachten, dass die Glühbirnen bei der Parallelschaltung heller leuchten, als bei der Reihenschaltung. Dies liegt daran, 
 dass in der Reihenschaltung Spannung über der ersten Glühbirne abfällt, da diese einen Widerstand im Stromnetz darstellt. Somit liegt an der zweiten 
 Glühbirne eine geringere Spannung an und Folge dessen leuchtet diese weniger. Bei einer Parallelschaltung ist dies nicht der Fall, da dort an jeder 
-Glühbirne gleichviel Spannung anliegt. Es sinkt lediglich der Strom an jeder Glühbirne. 
+Glühbirne gleichviel Spannung anliegt. Es sinkt lediglich der Strom an jeder Glühbirne. %\cite5
+\\
+Das nächste Thema im Bereich Elektrotechnik ist der Wechselstrom bzw. Drehstrom. Diese Art des Stroms hat einen großen Anwendungsbereich im deutschen 
+Stromnetz, aber wird auch in jedem Haushalt oder Firma verwendet. Um nun mit diesem sicher umgehen zu können, sei es bei Reparaturen im Stromnetz oder 
+bei der alltäglichen Verwendung von Haushaltgeräten, muss es Fachkräfte geben, die sich um die ordnungsgemäße Installation und den Bau kümmern. Dazu werden 
+Sie immer zu den aktuellen Sicherheitsstandards informiert und werden gegebenenfalls nachgeschult, \zB im Bereich Arbeiten unter Spannung (AuS) für 
+Stromnetz Monteure.
+\paragraph{Hausanschlussschaltungen und Elektrogeräte}\mbox{}\\
+Unter dem Begriff Hausanschlussschaltungen werden die meisten Menschen nichts verstehen, da Sie mit der Materie wenig zu tun haben. Allerdings ist dieser 
+Bereich in jedem normalen Haushalt zu finden, da Sie meist Steckdosen und Lichtschalter für Deckenlampen in Ihrem Haus haben. Diese Installation der Kabel, 
+Lampen, Steckdosen und Lichtschalter werden in der Regel von einem ausgebildeten Elektriker durchgeführt. Hierbei wird meist eine Leitung mit drei oder fünf 
+Adern des Typs NAXY vom Sicherungskasten aus verlegt und durch Fehlerstromschutzschalter (FI) / Fehlerstrom-Schutzeinrichtungen (RCD) abgesichert. Diese 
+haben die wichtige Aufgabe den Stromfluss zu unterbrechen, sobald ein Strom, \zB bei einem defekten Haushaltsgerät aus Metall, über den Schutzleiter (PE) 
+abfließt. Würde es keinen PE-Leiter oder FI geben, dann ist es sehr wahrscheinlich, dass der Strom über den Menschen fließt und dieser einen Stromschlag 
+erleidet und gesundheitliche Probleme bekommt. Deshalb ist es auch von hoher Relevanz, dass Hausanschlussschaltungen von einem ausgebildeten Elektriker 
+installiert werden, um zu gewährleisten, dass alle Kabel ordnungsgemäß angeschlossen wurden. Zusätzlich prüft dieser mit geeichten Messgeräten, ob die FIs 
+und/oder RCDs an denen die Steckdosen angeschlossen sind bei den vorgeschriebenen Werten auslösen.\\
+Beim Bau von Elektrogeräten oder Verlängerungsleitungen ist es ebenfalls wichtig diese vor Verkauf und Inbetriebnahme zu prüfen, da nie zu einhundert 
+Prozent sicher ist, ob alle Bauteile nach der Produktion intakt sind. Hier muss zuerst eine Sichtkontrolle auf Beschädigung nach Protokoll durchgeführt 
+werden, da Haushaltsgeräte keine FIs oder RCDs verbaut haben. Anschließend werden die Geräte an ihren Steckern mit Messgeräten gemessen, um festzustellen 
+ob sie alle Grenzwerte einhalten. Hierbei wird vor allem auf den Isolationswiderstand, die Fehlerschleifenimpedanz und die Auslösezeit geachtet.\\\\
+Ein weiterer Anwendungspunkt von RCD Messungen betrifft die Monteure des Stromnetzes, da diese an Standorten wo jährliche Volksfeste oder Märkte stattfinden 
+Kabelverteilerschränke (KVS) haben, in denen Sie Steckdosen für Starkstromanschlüsse des Typs CEE haben. Diese Steckdosen sind durch RCDs abgesichert und 
+müssen vor Benutzung auf Funktion und Grenzwerteinhaltung geprüft werden. Andernfalls darf dieser nicht verwendet werden, da er ein Sicherheitsrisiko 
+darstellt. Hierzu wird jede CEE-Steckdose mit einem Messadapter verbunden und anschließend mit einem Installationstester gemessen. Wichtig sind bei 
+solchen Steckdosen die Messung der Fehlerschleifenimpedanz $I_{ΔN}$, welche Aussage darüber trifft, wie hoch der tatsächliche Auslösestrom im Vergleich 
+zum angegebenen Auslösestrom ist. Dies ist von Wichtigkeit, um Personen zu schützen, die mit eventuell defekten Geräten arbeiten und in Gefahr laufen 
+einen Stromschlag zu bekommen. Anschließend wird noch die Auslösezeit gemessen, um zu prüfen, ob der RCD schnellgenug bei einem möglichen Fehlerstrom 
+auslöst. Dieser Wert liegt normalerweise im zweistelligen Millisekunden Bereich und kann je nach RCD und alter unterschiedlich sein. Hierbei ist nur 
+wichtig, dass der Grenzwert von 200 ms nicht überschritten wird, da sonst akute Gefahr herrscht bei Nutzung defekter Geräte. %cite 6
+\begin{description}
+\item[KVS] Ein KVS ist ein Schrank, der wie eine Weiche im Stromnetz funktioniert. In diesem kommen mehrere Kabel des Stromkreises an und können beliebig 
+miteinander verschalten werden. Zudem können freie Leisten genutzt werden, um \zB an Volksfesten Fahrgeschäft anzuschließen und mit passenden Sicherungen 
+an das Stromnetz anzubinden.
+\end{description}
 
 \section{Reflexion und Bewertung}
 
-Hier Text ...
+Die Problemstellungen aus den Bereichen Metallbearbeitung und Elektrotechnik führten zu zahlreichen Methoden der Lösung einfacher Probleme. Dazu wurden 
+Verfahren angewandt, welche in der Praxis alltäglich und teils vollautomatisiert verwendet werden. Dazu zählen vor allem die Verfahren aus dem Bereich 
+der Metallbearbeitung, wie \zB dem Feilen, Fräsen und Drehen, welche für vielfältige Problemstellungen angewandt werden kann. Zudem kann dieses Verfahren 
+mit mathematischen Theoremen verknüpft werden, um \zB durch numerische Verfahren, wie in der CNC Technik, Werkstücke präzise zu fertigen. Somit ist der 
+Anspruch an hoch qualitativ und quantitativer Arbeit erfüllt. Ein großes Problem dabei ist nur, dass für solch komplexe Maschinen meist Personal mit 
+hoher Fach Expertise und langjähriger Erfahrung benötigt wird. Um dieses Problem ein wenig einzudämmen gibt es auch noch die genannte Methode des 
+kommerziellen Fräsens, in der keine Kenntnisse zu mathematischen Theoremen vorausgesetzt werden. Die Qualität des Endproduktes liegt hierbei in der Hand 
+des Mitarbeitenden und seiner Konzentration, da es bei kleinen Unaufmerksamkeiten schnell zu Fehlern oder Abweichungen im Werkstück kommen kann. Dies 
+führt wiederum zu einer Steigerung der nicht brauchbaren Werkstücke, auch genannt als Ausschuss.\\
+Auch in der Elektrotechnik ist es von Wichtigkeit bestimmte Verfahren zur Bearbeitung von Aufgaben kennenzulernen, da dies ebenfalls das Verständnis für 
+bestimmte Lösungswege fördert. Dieses Verständnis kann anschließend genutzt werden neue Probleme zu lösen und einen zielgerichteten und nachhaltigen 
+Lösungsweg anzustreben. Dies konnte vor allem gezeigt werden anhand des Beispiels der RCD Messung, da diese nicht nur in der Theorie und in der 
+Produktion genutzt wird, sondern auch wichtig für die Arbeit im alltäglichen Betrieb ist. Diese Maßnahmen werden fast täglich von Elektrikern verwendet 
+und garantieren die Sicherheit eines jenes Bürgers. Zudem fördert das Wissen über die Vorgehensweise einer Hausanschlussschaltung die Ingenieursfähigkeiten 
+und führt zur Entwicklung eines praktischen Verständnisses. Dies kann im beruflichen Alltag helfen theoretische Aufgaben qualitativer in praktische 
+Umzusetzen und ein zielgerichteteres Vorgehen bei spontan auftretenden Problemen zu fördern.
 
 \clearpage
