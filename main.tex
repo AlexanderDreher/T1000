@@ -14,7 +14,12 @@ cleardoublepage=empty,
 parskip,				
 ngerman
 ]{scrbook}
-\usepackage[left=2.5cm, right=2.5cm, top=4cm, bottom 3cm, headsep=1.3cm, footskip=1.3cm]{geometry}
+\usepackage[left=2.5cm, 
+			right=2.5cm,
+			top=2.5cm, 
+			bottom=3.2cm, 
+			headsep=1.3cm, 
+			footskip=1.6cm]{geometry}
 \usepackage{times}		
 \usepackage[setspace=false]{scrhack}
 \usepackage[utf8]{inputenc} 	
@@ -63,8 +68,8 @@ hyperref=true,
 \usepackage{pdfpages}
 
 \usepackage{enumitem}			
-
-\usepackage{amsmath}			
+\usepackage{amsmath}	
+\usepackage{mhchem}		
 \usepackage{textcomp} 			
 \usepackage{eurosym}			% Bessere Darstellung Euro-Symbol mit \euro
 
@@ -187,7 +192,7 @@ marginal
 % ------------------------------ Titelei -----------------------------------------------------
 
 \include{pages/titelseite} 				% erzeugt die Titelseite
-\pagenumbering{roman}					% kleine, römische Seitenzahlen für Titelei
+\pagenumbering{Roman}					% kleine, römische Seitenzahlen für Titelei
 \include{pages/erklaerung} 				% Einbinden der eidestattlichen Erklärung
 \include{chapter/Überblick_Tätigkeiten_der_Praxisphasen}   			% Einbinden des Abstracts
 
