@@ -18,7 +18,7 @@ ngerman
 			right=2.5cm,
 			top=2.5cm, 
 			bottom=3.2cm, 
-			headsep=1.3cm, 
+			headsep=1cm, 
 			footskip=1.6cm]{geometry}
 \usepackage{times}		
 \usepackage[setspace=false]{scrhack}
@@ -77,6 +77,8 @@ hyperref=true,
 hyperfootnotes=false,			
 hidelinks						
 ]{hyperref}
+
+\usepackage{acronym}
 
 \usepackage{makeidx}			% Paket zur Erstellung eines Index
 \usepackage[intoc]{nomencl} 	% zur Erstellung des Abkürzungsberzeichnisses
@@ -192,7 +194,7 @@ marginal
 % ------------------------------ Titelei -----------------------------------------------------
 
 \include{pages/titelseite} 				% erzeugt die Titelseite
-\pagenumbering{Roman}					% kleine, römische Seitenzahlen für Titelei
+\pagenumbering{roman}					% kleine, römische Seitenzahlen für Titelei
 \include{pages/erklaerung} 				% Einbinden der eidestattlichen Erklärung
 \include{chapter/Überblick_Tätigkeiten_der_Praxisphasen}   			% Einbinden des Abstracts
 
@@ -209,6 +211,8 @@ marginal
 \renewcommand{\nomlabel}[1]{#1 \dotfill}
 \setlength{\nomitemsep}{-\parsep}
 \printnomenclature
+\clearpage
+\input{pages/formelzeichen}
 \cleardoublepage
 \listoffigures
 \cleardoublepage
@@ -226,7 +230,6 @@ marginal
 \include{chapter/Tätigkeitsschwerpunkt_2}
 \include{chapter/Tätigkeitsschwerpunkt_3}
 \include{chapter/Tätigkeitsschwerpunkt_4}
-\include{chapter/Tätigkeitsschwerpunkt_5}
 \include{chapter/zusammenfassung}
 
 % ---- Literaturverzeichnis ----------
