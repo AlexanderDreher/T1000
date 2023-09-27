@@ -38,7 +38,9 @@ ngerman
 	output-decimal-marker = {,}
 }
 
-\usepackage{graphicx}  			
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}  			
 \usepackage[format=hang,		
 font=normal,
 labelfont=bf,
@@ -54,8 +56,8 @@ hyperref=true,
 ]{biblatex}
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
-\addbibresource{literature/literatur.bib} %% Einbinden der bib-Datei. Endung .bib unbedingt ergänzen
-\addbibresource{literature/literatur2.bib} %% Einbinden mehrerer bib-Dateien mit zusätzlichem \addbibresource - Befehl
+\addbibresource{literature/literatur.bib}
+
 
 \usepackage{csquotes}
 
@@ -156,10 +158,10 @@ marginal
 \newcommand{\studienschwerpunkt}{}
 \newcommand{\autor}{Alexander Dreher}
 \newcommand{\matrikelnr}{5642939}
-\newcommand{\kurs}{TFE22-1/TEU22}
+\newcommand{\kurs}{TEU22}
 \newcommand{\firma}{TWS Netz GmbH}
 \newcommand{\abgabe}{\today}
-\newcommand{\betreuerdhbw}{}			% Gutachter der DHBW (nur bei Bachelorarbeit erforderlich)
+\newcommand{\betreuerdhbw}{Prof. Dr.-Ing. Konrad Reif}			% Gutachter der DHBW (nur bei Bachelorarbeit erforderlich)
 \newcommand{\betreuerfirma}{Patricia Schmitz}
 \newcommand{\jahr}{2023}			% für Angabe im Copyright-Vermerk der Titelseite
 
@@ -193,30 +195,30 @@ marginal
 
 % ------------------------------ Titelei -----------------------------------------------------
 
-\include{pages/titelseite} 				% erzeugt die Titelseite
-\pagenumbering{roman}					% kleine, römische Seitenzahlen für Titelei
-\include{pages/erklaerung} 				% Einbinden der eidestattlichen Erklärung
-\include{chapter/Überblick_Tätigkeiten_der_Praxisphasen}   			% Einbinden des Abstracts
+\include{pages/titelseite} 
+\include{pages/erklaerung} 
+\pagenumbering{roman}
+%\include{chapter/Überblick_Tätigkeiten_der_Praxisphasen} 
 
-\tableofcontents						% Erzeugen des Inhalsverzeichnisses
+\tableofcontents						
 \cleardoublepage
 
-\setlength{\parskip}{0.5\baselineskip}				%Erzeugen aller Verzeichnisse
-\renewcommand{\indexname}{Sachwortverzeichnis}
-\printindex
-\addcontentsline{toc}{chapter}{\indexname}
+\setlength{\parskip}{0.5\baselineskip}
 \input{pages/abkuerzungen}
-\renewcommand{\nomname}{Verzeichnis verwendeter Formelzeichen und Abkürzungen}
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
 \setlength{\nomlabelwidth}{.20\hsize}
 \renewcommand{\nomlabel}[1]{#1 \dotfill}
 \setlength{\nomitemsep}{-\parsep}
 \printnomenclature
 \clearpage
+\renewcommand{\indexname}{Formelzeichenverzeichnis}
+\chapter*{Formelzeichenverzeichnis}
 \input{pages/formelzeichen}
+\addcontentsline{toc}{chapter}{\indexname}
 \cleardoublepage
 \listoffigures
 \cleardoublepage
-\listoftables							%Tabellenverzeichnis ggf. löschen
+\listoftables
 \cleardoublepage
 
 % --------------------------------------------------------------------------------------------
@@ -226,6 +228,7 @@ marginal
 
 \rmfamily
 
+\include{chapter/Überblick_Tätigkeiten_der_Praxisphasen}
 \include{chapter/Tätigkeitsschwerpunkt_1}
 \include{chapter/Tätigkeitsschwerpunkt_2}
 \include{chapter/Tätigkeitsschwerpunkt_3}
